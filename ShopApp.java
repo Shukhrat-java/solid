@@ -70,6 +70,9 @@ public class ShopApp {
             for (Product item : items) {
                 System.out.println(item);
             }
+            System.out.printf("Итого: %.2f руб.%n", cart.getTotal());
+            System.out.println("(При заказе от " + DiscountRules.MIN_AMOUNT_FOR_DISCOUNT + 
+                             " руб. - скидка 10%)");
         }
     }
 }
