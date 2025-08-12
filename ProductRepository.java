@@ -3,12 +3,12 @@ import java.util.List;
 
 public class ProductRepository {
     private List<Product> products;
-
+    //определяем цены(магические числа) в праметр 
     public ProductRepository() {
         products = new ArrayList<>();
-        products.add(new Product("Молоко", 85.50, "Простоквашино"));
-        products.add(new Product("Хлеб", 45.30, "Пекарня"));
-        products.add(new Product("Яйца", 120.90, "Стальные"));
+        products.add(new Product("Молоко", ProductPrices.MILK_PRICE, "Простоквашино"));
+        products.add(new Product("Хлеб", ProductPrices.BREAD_PRICE, "Пекарня"));
+        products.add(new Product("Яйца", ProductPrices.EGGS_PRICE, "Стальные"));
     }
 
     public List<Product> getAllProducts() {
